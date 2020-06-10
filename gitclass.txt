@@ -1,0 +1,141 @@
+Microsoft Windows [Version 10.0.17763.1]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git add README.md
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git.html.txt
+        git.txt.txt
+
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git add -A
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        new file:   git.html.txt
+        new file:   git.txt.txt
+
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git commit -m "first commit"
+[master 8a999c0] first commit
+ 3 files changed, 19 insertions(+)
+ create mode 100644 git.html.txt
+ create mode 100644 git.txt.txt
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 523 bytes | 32.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Olubusola/GitHubClass.git
+   3b6490d..8a999c0  master -> master
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git branch
+* master
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git branch branch_one
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git branch
+  branch_one
+* master
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git checkout branch_one
+Switched to branch 'branch_one'
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git status
+On branch branch_one
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git.html.txt
+        modified:   git.txt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git add -A
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git status
+On branch branch_one
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   git.html.txt
+        modified:   git.txt.txt
+
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git status
+On branch branch_one
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   git.html.txt
+        modified:   git.txt.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git.txt.txt
+
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git commit -a -m "Second Commit"
+[branch_one 1cb0c49] Second Commit
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git push
+fatal: The current branch branch_one has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin branch_one
+
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>git push --set-upstream origin branch_one
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 434 bytes | 108.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'branch_one' on GitHub by visiting:
+remote:      https://github.com/Olubusola/GitHubClass/pull/new/branch_one
+remote:
+To https://github.com/Olubusola/GitHubClass.git
+ * [new branch]      branch_one -> branch_one
+Branch 'branch_one' set up to track remote branch 'branch_one' from 'origin'.
+
+C:\Users\ooagboola\OneDrive - Union Bank\Documents\GitTraining\GitHubClass>
